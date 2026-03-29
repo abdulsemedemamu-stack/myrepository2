@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Choose Your Candidate</h2>
+
+      <div class="candidates">
+        <button onclick="vote('Candidate A')">🧑 Candidate A</button>
+        <button onclick="vote('Candidate B')">🧑 Candidate B</button>
+        <button onclick="vote('Candidate C')">🧑 Candidate C</button>
+      </div>
+
+      <button onclick="getResults()">📊 Show Results</button>
+
+      <div id="result"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <canvas id="voteChart"></canvas>
+
+    <script src="vote.js"></script>
+  </body>
+</html>
